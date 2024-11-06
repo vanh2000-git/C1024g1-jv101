@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>survey khách hàng</title>
 </head>
 <body>
-$END$
+<h1>
+  Market Research Survey
+</h1>
+<p>Please take a few moments to complete this satisfaction suurvey.</p>
+<br>
+<form>
+  <label><h4>What is your age range?</h4>
+    <select name="age-range" >
+      <option value="1">18-24</option>
+      <option value="2">25-34</option>
+      <option value="3">35-50</option>
+      <option value="4">50+</option>
+    </select>
+  </label>
+  <label><h4>What is your yearly income range?</h4>
+    <select name="income">
+      <option value="1">0-25k</option>
+      <option value="2">25-50k</option>
+      <option value="3">50-100k</option>
+      <option value="4">100k+</option>
+    </select>
+  </label>
+  <h4>Gender identity</h4>
+    <input type="radio" value="1">Male <br>
+    <input type="radio" value="2">Female <br>
+    <input type="radio" value="3">Nonbinary <br>
+    <input type="radio" value="4">Other
+
+  <h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+    <input type="checkbox" value="1" name="p1">product 1 <br>
+    <input type="checkbox" value="2" name="p2">product 2 <br>
+    <input type="checkbox" value="3" name="p3">product 3
+
+  <h4>How often would you use our new product?</h4>
+    <label><input type="radio" name="often" value="1">Daily</label> <br>
+    <label><input type="radio" name="often" value="2">Weekly</label> <br>
+    <label><input type="radio" name="often" value="3">Monthly</label>
+  <h4>What would you pay for the new product?</h4>
+  <table>
+    <tr>
+      <td>$</td>
+      <td colspan="5"><input type="number"></td>
+      <td>.</td>
+      <td><input type="text" size="1"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td align="center" colspan="5">dollars</td>
+      <td></td>
+      <td>cents</td>
+    </tr>
+  </table>
+</form>
 </body>
 </html>
