@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bài tập</title>
 </head>
+<style>
+    table{
+        width: 50%;
+    }
+</style>
 <body>
-$END$
+<form>
+    <table>
+        <tr>
+            <td><input type=number placeholder="nhập điểm vật lý" id="dvatly" style="text-align: center"></td>
+            <td rowspan="3"><button type="button" onclick="tinhdiem()"  id="result"> Xem </button></td>
+        </tr>
+        <tr>
+            <td><input type=number placeholder="nhập điểm hóa" id="dhoa" style="text-align: center"></td>
+        </tr>
+        <tr>
+            <td><input type=number placeholder="nhập điểm sinh" id="dsinh" style="text-align: center"></td>
+        </tr>
+    </table>
+</form>
+<br>
+<hr>
+<form>
+    <table>
+        <tr>
+            <td><input type="number" placeholder="nhập &deg;C" style="text-align: center" id="doC"></td>
+            <td style="padding: 30px"><button type="button" onclick="chuyendoi()">Chuyển đối</button></td>
+            <td id="doF" style="text-align: center"></td>
+        </tr>
+    </table>
+</form>
+
+
+<script src="practice.js"></script>
 </body>
 </html>
