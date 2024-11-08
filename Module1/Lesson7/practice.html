@@ -10,7 +10,8 @@
     }
     #doF {
         width: 190px;
-        height: 30px;
+        border: 1px grey solid;
+        text-align: center;
     }
 </style>
 <body>
@@ -33,9 +34,9 @@
 <form>
     <table>
         <tr>
-            <td><input type="number" placeholder="nhập &deg;C" style="text-align: center" id="doC"></td>
-            <td style="padding: 30px"><button type="button" onclick="chuyendoi()">Chuyển đối</button></td>
-            <td id="doF" style="text-align: center; border: 1px solid black">Kết quả chuyển đổi &deg;F</td>
+            <td rowspan="3"><input type="number" placeholder="nhập &deg;C" style="text-align: center" id="doC"></td>
+            <td rowspan="1" style="padding: 30px"><button type="button" onclick="chuyendoi()">Chuyển đối</button></td>
+            <td rowspan="1" id="doF">Kết quả chuyển đổi &deg;F</td>
         </tr>
     </table>
 </form>
